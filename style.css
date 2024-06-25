@@ -1,0 +1,113 @@
+/* Reset and basic styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Light background */
+    color: #333; /* Dark text color */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.logo {
+    height: 40px; /* Adjust logo size */
+    margin-right: 10px; /* Space between logo and header */
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    transition: color 0.3s; /* Smooth transition for color change */
+    color: #fff; /* White text by default */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700; /* LV gold color when hovering */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/* Main content */
+main {
+    padding: 2rem 0;
+}
+
+/* Section titles */
+h2 {
+    color: #333; /* Dark title color */
+    margin-bottom: 1.5rem;
+}
+
+/* Product grid */
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.product {
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 1rem;
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Button styles */
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: #333; /* Dark button */
+    color: #fff; /* White text */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth color transition */
+}
+
+.btn:hover {
+    background-color: #ffd700; /* LV gold color on hover */
+    color: #333; /* Dark text on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .logo {
+        height: 30px; /* Adjust logo size for smaller screens */
+    }
+
+    .btn {
+        padding: 0.3rem 0.8rem; /* Smaller padding for buttons */
+    }
+
+    #product-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust product grid for smaller screens */
+    }
+}
